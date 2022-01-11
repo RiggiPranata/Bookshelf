@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head">
+        <h1 class="title_head">My Bookshelf</h1>
+    </header>
+    <main>
+        <section class="input_book">
+            <h2>Ada Buku baru?</h2>
+            <form id="inputBook">
+                <div class="input">
+                    <label for="inputJudul">Judulnya apa?</label>
+                    <input id="inputJudul" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="inputPenulis">Siapa penulisnya?</label>
+                    <input id="inputPenulis" type="text" required >
+                </div>
+                <div class="input">
+                    <label for="inputTahun">Keluar tahun berapa?</label>
+                    <input id="inputTahun" type="number" required>
+                </div>
+                <div class="input_check">
+                    <label for="inputSelesaiBaca">Udah selesai dibaca?</label>
+                    <input id="inputSelesaiBaca" type="checkbox">
+                </div>
+                <button id="masukanBuku" type="submit" value="submit">Masukan buku <span>Belum selesai baca</span></button>
+            </form>
+        </section>
+        <section class="book_shelf">
+            <h2>Belum selesai dibaca</h2>
+            <div id="belumDiBaca" class="list_buku">
+            </div>
+        </section>
+        <section class="book_shelf">
+            <h2>Selesai dibaca</h2>
+            <div id="selesaiDiBaca" class="list_buku">
+            </div>
+        </section>
+    </main>
+    <footer class="foot">
+        <div class="sosmed">
+            <h3>Sosial Media</h3>
+            <table>
+                <tr>
+                    <th>E-mail</th>
+                    <td>riggipranata@gmail.com</td>
+                    <th>Dicoding</th>
+                    <td>riggi_pranata</td>
+                </tr>
+                <tr>
+                    <th>Instagram</th>
+                    <td>pranata.riggi</td>
+                    <th>Twitter</th>
+                    <td>pranata_riggi</td>
+                </tr>
+                <tr>
+                    <th>Facebook</th>
+                    <td>Riggi Pranata</td>
+                    <th>LinkedIn</th>
+                    <td>RIGGI PRANATA</td>
+                </tr>
+            </table>
+        </div>
+        <p>My web &#169; 2021, Riggi Pranata</p>
+    </footer>
+    <script src="buku.js" type="text/javascript"></script>
+    <script src="dom.js" type="text/javascript"></script>
+    <script src="javascript.js" type="text/javascript"></script>
+</body>
+</html>

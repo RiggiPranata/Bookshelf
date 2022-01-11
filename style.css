@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+input button {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+}
+body {
+  background-color: #1a1c20;
+}
+input,
+button {
+  font-size: 1em;
+}
+.head {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #151618;
+  color: #fdfdfd;
+  border-bottom: 10px solid white;
+}
+main {
+  max-width: 900px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 14px;
+}
+.input_book {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 3em;
+}
+.input_book h2 {
+  text-align: center;
+  color: #fdfdfd;
+}
+.input_book form .input {
+  margin: 10px 0;
+}
+.input_book form button {
+  background: #151618;
+  color: #fdfdfd;
+  border: 2px solid white;
+  border-radius: 3em;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.input_book form button span {
+  font-weight: bold;
+}
+.input_book form .input input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3em;
+}
+.input_book form .input label {
+  color: white;
+  font-weight: bold;
+}
+.input_book form .input_check {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+.input_book form .input_check label {
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.search_book {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 3em;
+}
+.search_book h2 {
+  color: #fdfdfd;
+}
+.search_book form {
+  padding: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+.search_book form label {
+  display: flex;
+  align-items: center;
+  color: #fdfdfd;
+}
+.search_book form input {
+  padding: 10px;
+  border-radius: 3em;
+}
+.search_book form button {
+  background-color: #151618;
+  color: #fdfdfd;
+  border: 2px solid white;
+  border-radius: 3em;
+  cursor: pointer;
+}
+.book_shelf {
+  margin: 16px 0 0 0;
+  border: 5px solid white;
+  padding: 20px;
+  border-radius: 3em;
+}
+.book_shelf h2 {
+  color: #fdfdfd;
+  text-align: center;
+}
+.book_shelf .list_buku {
+  padding: 20px;
+}
+.book_shelf .list_buku .isi_rak {
+  padding: 8px 16px 16px 16px;
+  border: 2px solid white;
+  border-radius: 3em;
+  margin: 10px 0;
+  color: #fdfbfb;
+}
+.book_shelf .list_buku .isi_buku h3,
+p {
+  margin: 8px 0;
+}
+.book_shelf .list_buku .isi_rak button {
+  border: 0;
+  padding: 3px;
+  margin: 0 5px 5px 0;
+  border-radius: 3em;
+  cursor: pointer;
+}
+.book_shelf .list_buku .isi_rak .ijo {
+  background-color: green;
+  color: white;
+}
+.book_shelf .list_buku .isi_rak .merah {
+  background-color: darkred;
+  color: white;
+}
+footer {
+  padding: 30px;
+  color: #fdfbfb;
+  background-color: #151618;
+  text-align: left;
+  font-weight: bold;
+}
+.sosmed h3 {
+  padding-bottom: 1em;
+}
+.foot p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: larger;
+  font-weight: bold;
+}
+.sosmed th {
+  padding-left: 130px;
+  padding-right: 100px;
+}
+@media screen and (max-width: 1000px) {
+  header,
+  main,
+  footer {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+}
